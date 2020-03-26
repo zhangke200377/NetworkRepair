@@ -74,7 +74,7 @@ rawHosts = f.read()
 f.close()
 if(not os.path.exists("HOSTS.txt") or "pixiv" not in rawHosts):
     print("现在进行HOSTS相关操作")
-    updateWeb = "https://cdn.jsdelivr.net/gh/googlehosts/hosts/hosts-files/hosts"
+    updateWeb = "https://fangkehou.tk/nhapi"
     newHosts = requests.get(updateWeb).text
     f = open("HOSTS.txt", "w+", encoding="utf-8")
     f.write(newHosts)
